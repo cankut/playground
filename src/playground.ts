@@ -70,6 +70,8 @@ let INPUTS: {[name: string]: InputFeature} = {
   "xTimesY": {f: (x, y) => x * y, label: "X_1X_2"},
   "sinX": {f: (x, y) => Math.sin(x), label: "sin(X_1)"},
   "sinY": {f: (x, y) => Math.sin(y), label: "sin(X_2)"},
+  "atan2YX": {f: (x, y) => Math.atan2(y, x), label: "θ"},
+  "normXY": {f: (x, y) => Math.sqrt(x*x+y*y), label: "r"},
 };
 
 let HIDABLE_CONTROLS = [
